@@ -1,0 +1,101 @@
+BLEU score = 40.49
+epoch = 49
+image = 8
+
+
+| Train Loss: 0.362 | Train PPL:   1.436 |
+| Val. Loss: 1.164 |  Val. PPL:   3.201 |
+| Test Loss: 1.164 | Test PPL:   3.201 |
+
+0
+src = A の先頭 を返す
+trg = return A [ 0 ]
+rst = return A <eos>
+1
+src = A の B 番 目 でない とき 、
+trg = if not A [ B ] :
+rst = if A [ B ] . append ( C [ C ] ) : <eos>
+2
+src = 2 の 1000 乗 の 文字列を A とする
+trg = A = str ( 2 ** 1000 )
+rst = A = 2 . 2 . 2 . 2 2 <eos>
+3
+src = 2 から B に 1 を加えた 値 未 満 までの 数 列 の 各要素 を 順に A として 、 繰り返す
+trg = for A in range ( 2 , B + 1 ) :
+rst = for A in range ( 2 , B + 1 ) : <eos>
+4
+src = 2 から B 未 満 までの 数 列 の 各要素 を 順に A として 、 繰り返す
+trg = for A in range ( 2 , B ) :
+rst = for A in range ( 2 , B ) : <eos>
+5
+src = A を 1 だけ 減少 させる
+trg = A -= 1
+rst = A <unk> <eos>
+6
+src = A が 16 以下の とき 、
+trg = if A <= 16 :
+rst = if 4 <= A <= <unk> : <eos>
+7
+src = A が B 以下 かどうか を返す
+trg = return A <= B
+rst = return A % B <eos>
+8
+src = A の 総 和 を返す
+trg = return sum ( A )
+rst = return sum ( A ) <eos>
+9
+src = 9 99 から 99 未 満 までの -1 間隔 の 数 列 の 各要素 を 順に A として 、 繰り返す
+trg = for A in range ( 999 , 99 , - 1 ) :
+rst = for A in range ( <unk> , <unk> ) : <eos>
+10
+src = A が B 以上 または C の A 番 目 が -1 と 等 しい 間 、 以下 を 繰り返す
+trg = while A >= B or C [ A ] == - 1 :
+rst = if A . append ( B [ C == 1000 : <eos>
+11
+src = B の 文字列を A とする
+trg = A = str ( B )
+rst = A = B . <unk> ( <unk> <eos>
+12
+src = A の -1 番 目 が 400 0000 より 小さい 間 、 以下 を 繰り返す
+trg = while A [ - 1 ] < 4000000 :
+rst = while A < <unk> : <eos>
+13
+src = ( 真 ) からなる 列 の B に 1 を加えた 値 回 分 の 列 を A とする
+trg = A = [ True ] * ( B + 1 )
+rst = A = [ 1 ] * ( B + 1 ) <eos>
+14
+src = ( 0 ) からなる 列 を返す
+trg = return [ 0 ]
+rst = return A [ 0 ] <eos>
+15
+src = A を 400 で 割 った 余 り が 0 と 等 しく または A を 100 で 割 った 余 り が 0 と 等 しく なく かつ A を 4 で 割 った 余 り が 0 と 等 しい かどうか を返す
+trg = return A % 400 == 0 or ( ( not A % 100 == 0 ) and A % 4 == 0 )
+rst = return <unk> ( A % 10 ) == 0 <eos>
+16
+src = A の B から 1 を 引 いた 値 番 目 を返す
+trg = return A [ B - 1 ]
+rst = return A [ B - 1 ] <eos>
+17
+src = A が 2 以下の とき 、
+trg = if A <= 2 :
+rst = if A <= 2 : <eos>
+18
+src = ( int ) ( l en ( A ) /2 ) に A の長さ を 2 で 割 った 余 り を加えた 値を セ パ レー タ とする
+trg = B = (int) ( len ( A ) / 2 ) + ( len ( A ) % 2 )
+rst = A = <unk> ( <unk> ( B % 100 ) <eos>
+19
+src = A の B 番 目 を A の B に 1 を加えた 値 番 目 だけ 増加 させる
+trg = A [ B ] += A [ B + 1 ]
+rst = A [ B ] = A [ B ] [ B + 1 ] [ B ] * A [ B + 1 ] * ( C + 1 ] <eos>
+20
+src = 15 8 2 が A 以下の とき 、
+trg = if 1582 <= A :
+rst = if 4 <= <unk> : <eos>
+21
+src = B から B に C に D を 掛 け た 値 を加えた 値 未 満 までの C 間隔 の 数 列 の 各要素 を 順に A として 、 繰り返す
+trg = for A in range ( B , B + ( C * D ) , C ) :
+rst = for A in range ( B , C ) : <eos>
+22
+src = A を 2 で 割 った 余 り でない とき 、
+trg = if not A % 2 :
+rst = if A % 2 == 0 : <eos>

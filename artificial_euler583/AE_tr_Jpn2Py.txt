@@ -1,0 +1,244 @@
+BLEU score = 49.90
+epoch = 31
+image = 32
+
+| Train Loss: 0.266 | Train PPL:   1.305 |
+| Val. Loss: 0.559 |  Val. PPL:   1.749 |
+| Test Loss: 1.130 | Test PPL:   3.096 |
+
+0
+src = facts の x + 1 番目 の 要素 に x 番目 の 要素 と x + 1 積 を 代入 する
+trg = facts [ x + 1 ] = facts [ x ] * ( x + 1 )
+rst = facts [ x + 1 ] = facts [ x + 1 ] * ( x + 1 ) <eos>
+1
+src = h に d 、 26 ( m + 1 ) / 10 の 整数 部分 、 yy を 100 で 割っ た 余り 、 y % 100 / 4 の 整数 部分 、 gamma を 足し た 結果 を 代入
+trg = h = ( d + int ( 26 * ( m + 1 ) / 10 ) + ( y % 100 ) + int ( ( y % 100 ) / 4 ) + gamma ) % 7
+rst = gamma = max ( y / 100 ) <unk> ] * int ( y / 100 ) <eos>
+2
+src = primes を 返す
+trg = return primes
+rst = return primes <eos>
+3
+src = n を 10 で 割っ た 整数 部分 を 新しい n と する
+trg = n = int ( n / 10 )
+rst = n = n % 100 <eos>
+4
+src = n を i で 割る
+trg = n = n / i
+rst = i n = n <eos>
+5
+src = i に 1 を 足す
+trg = i = i + 1
+rst = i += 1 <eos>
+6
+src = s と d と n を 引数 と する 関数 euler 006 _ make _ common _ diff _ sequence の 定義
+trg = def euler006_make_common_diff_sequence ( s , d , n ) :
+rst = def <unk> ( s , n ) : <eos>
+7
+src = buf を 空文字 列 に する
+trg = buf = \" \"
+rst = buf = \" \" <eos>
+8
+src = b が 0 で ない 間
+trg = while b != 0 :
+rst = while n < 0 : <eos>
+9
+src = primes に n + 1 個 の True から なる リスト を 代入
+trg = primes = [ True ] * ( n + 1 )
+rst = return facts [ n + 1 ] * ( n + 1 ) <eos>
+10
+src = l を 引数 と する 関数 euler 012 _ is _ list _ empty _ a を 定義
+trg = def euler012_is_list_empty_a ( l ) :
+rst = def <unk> ( l ) : <eos>
+11
+src = s から e まで の 数 を 順に i として
+trg = for i in range ( s , e + 1 ) :
+rst = for i in range ( s , s , s + 1 ) : <eos>
+12
+src = 関数 euler 008 の 定義
+trg = def euler008 ( ) :
+rst = def <unk> ( ) : <eos>
+13
+src = i 以上 1000 未満 の 整数 j について
+trg = for j in range ( i , 1000 ) :
+rst = for j in range ( i , 1000 ) : <eos>
+14
+src = sep に s の 長 さ を 2 で 割っ た 商 と s を 2 で 割っ た 余り の 和 を 代入
+trg = sep = ( int ) ( len ( s ) / 2 ) + ( len ( s ) % 2 )
+rst = return ( int ( s / 2 ) + ( a % 2 ) + ( s + ( a % 2 ) <eos>
+15
+src = q に 2 の 1000 乗 の 文字 列 表現 を 格納
+trg = q = str ( 2**1000 )
+rst = q = str ( n ) <eos>
+16
+src = ret を i に する
+trg = ret = i
+rst = ret . append ( i ) <eos>
+17
+src = fl に l を 代入
+trg = fl += l
+rst = l = [ 0 ] <eos>
+18
+src = sl の 末尾 に buf を 追加
+trg = sl . append ( buf )
+rst = sl . append ( i ) <eos>
+19
+src = l の s + i 番目 の 要素 を ret に 追加 する
+trg = ret . append ( l [ s + i ] )
+rst = ret . append ( ( s [ i ] ) ) <eos>
+20
+src = a に 1 を 代入
+trg = a = 1
+rst = a = 1 <eos>
+21
+src = a の 自乗 が n より 小さけれ ば True 、 そう で なけれ ば False を 返す
+trg = return a * a < n
+rst = return a * n <eos>
+22
+src = 2 から a の 平方根 まで の 整数 を 順に i として
+trg = for i in range ( 2 , int ( a**0 . 5 ) + 1 ) :
+rst = for i in range ( 2 , int ( <unk> . 5 ) + 1 ) : <eos>
+23
+src = a と b を 引数 と する 関数 euler 011 _ over _ or _ equal の 定義
+trg = def euler011_over_or_equal ( a , b ) :
+rst = def <unk> ( a , b ) : <eos>
+24
+src = ret に s の 後ろ から i 番目 の 要素 を 足す
+trg = ret += s [ len ( s ) - 1 - i ]
+rst = ret += s [ i ] <eos>
+25
+src = a に b を 、 b に a を b で 割っ た 余り を 代入
+trg = a , b = b , a % b
+rst = a = b <eos>
+26
+src = p に i の 自乗 と j の 自乗 の 和 を 代入
+trg = p = i * i + j * j
+rst = p [ i + 1 ] = i + 1 ] * j * j * ( i + 1 ) <eos>
+27
+src = n を a で 割る
+trg = n /= a
+rst = a n = n <eos>
+28
+src = n を 引数 と する 関数 euler 006 _ n _ square _ a の 定義
+trg = def euler006_n_square_a ( n ) :
+rst = def <unk> ( n ) : <eos>
+29
+src = もし m が n より 小さい 場合
+trg = if m < n :
+rst = if n < n : <eos>
+30
+src = n が 2 で 割り切れる 場合 n を 2 で 割っ た 商 を 、 そう で ない 場合 n の 3 倍 に 1 を 足し た 数 を n に 代入
+trg = n = int ( n / 2 ) if n % 2 == 0 else n * 3 + 1
+rst = n = int ( n / 2 ) if n % 2 == 0 else n * 3 + 1 <eos>
+31
+src = tri の 長 さ - 1 未満 の 非負 整数 を 大きい 方 から i として
+trg = for i in reversed ( range ( len ( tri ) - 1 ) ) :
+rst = for i in range ( len ( len ( tri [ len ( 1 , len ( n**0 ( n**0 . 5 ) ) ) ) : <eos>
+32
+src = prime に 空 リスト を 代入
+trg = prime = [ ]
+rst = prime = [ ] <eos>
+33
+src = pl 内 の 各 要素 を i として
+trg = for i in pl :
+rst = for i in enumerate ( pl : <eos>
+34
+src = もし m が N 未満 なら
+trg = if m < N :
+rst = if m < n : <eos>
+35
+src = x と c の 組 を fl に 追加 する
+trg = fl . append ( ( x , c ) )
+rst = ret . append ( x , y + 1 ) <eos>
+36
+src = s と n を 引数 と する 関数 euler 013 _ front _ n _ slice を 定義
+trg = def euler013_front_n_slice ( s , n ) :
+rst = def <unk> ( s , n ) : <eos>
+37
+src = ループ が 正常 に 終了 し た 場合
+trg = else :
+rst = else : <eos>
+38
+src = n を 引数 と する 関数 euler 012 _ prime _ factorize の 定義
+trg = def euler012_prime_factorize ( n ) :
+rst = def <unk> ( n ) : <eos>
+39
+src = もし n が 0 より 大きく 、 かつ 2 以下 で ある なら
+trg = if 0 < n <= 2 :
+rst = if n % 2 == 0 : <eos>
+40
+src = 関数 euler 016 の 定義
+trg = def euler016 ( ) :
+rst = def <unk> ( ) : <eos>
+41
+src = 関数 euler 014 の 定義
+trg = def euler014 ( ) :
+rst = def <unk> ( ) : <eos>
+42
+src = そう で なく て 、 もし a が 0 で あれ ば
+trg = elif a == 0 :
+rst = elif a == 0 : <eos>
+43
+src = q の 末尾 に ch の 表す 数値 を 追加
+trg = q . append ( int ( ch ) )
+rst = q . append ( ch ) <eos>
+44
+src = ret に 空文字 列 を 代入
+trg = ret = \" \"
+rst = ret = \" <eos>
+45
+src = ret に 空 リスト を 代入
+trg = ret = [ ]
+rst = ret = [ ] <eos>
+46
+src = word の n % 10 番目 を 返す
+trg = return word [ n % 10 ]
+rst = return n [ n ] <eos>
+47
+src = cl の 2 番目 の 要素 を 0 と する
+trg = cl [ 1 ] = 0
+rst = cl [ 0 ] = int ( n - 2 ] * cl [ 0 ] * cl [ 0 ] * N <eos>
+48
+src = そう で なく て 、 もし n が 2 で あれ ば
+trg = elif n == 2 :
+rst = elif n == 2 : <eos>
+49
+src = a に 1 を 足し た 数 を 返す
+trg = return a + 1
+rst = return a + 1 <eos>
+50
+src = もし n が 1 と 等しけれ ば
+trg = if n == 1 :
+rst = if n == 1 : <eos>
+51
+src = n が i で 割り切れる 間
+trg = while n % i == 0 :
+rst = while n % i == 0 : <eos>
+52
+src = primes を True が n + 1 個 繋がっ た リスト と する
+trg = primes = [ True ] * ( n + 1 )
+rst = facts = [ n ] * ( n + 1 ) <eos>
+53
+src = dl を 空 リスト と する
+trg = dl = [ ]
+rst = sl = [ ] <eos>
+54
+src = a が x で 割り切れる 間
+trg = while a % x == 0 :
+rst = if n % x == 0 : <eos>
+55
+src = ret を 返す
+trg = return ret
+rst = return ret <eos>
+56
+src = もし j が 4 以上 で i が 16 以下 で あれ ば
+trg = if 4 <= j and i <= 16 :
+rst = if i <= 16 : <eos>
+57
+src = a を 返す
+trg = return a
+rst = return a <eos>
+58
+src = fact に 1 を 代入
+trg = fact = 1
+rst = 1 = 1 <eos>
