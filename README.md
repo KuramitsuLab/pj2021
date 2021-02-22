@@ -6,7 +6,7 @@ Corpus Collection 2021 for Project PJ
 フォルダ内には、コーパスデータ・翻訳結果一覧txt
 
 | フォルダ名 | コーパス | 略称 |
-|:-----------|------------:|
+|:-----------:|:------------:|:------------:|
 | artificiial_euler583 | Artificial-Eulerコーパス | AE |
 | euler703 | Eulerコーパス | E |
 | aoj_prosym2021 | AOJコーパス | AOJ |
